@@ -16,11 +16,11 @@
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "application" %>
         <%# javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
+  <body>
     <nav class="top-bar">
       <ul class="title-area">
         <li class="name">
@@ -43,7 +43,6 @@
       </div>
     </nav>
     
-  <body>
     <div class="row">
       <div class="small-8 columns"><%= yield %></div>
       <div class="small-4 columns">
@@ -52,5 +51,6 @@
       </div>
     </div>
     
+  	<%= javascript_include_tag "application" %>
   </body>
 </html>
