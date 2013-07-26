@@ -1,0 +1,15 @@
+!!! XML
+!!! Strict
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title JQVMap - World Map
+    %link{:href => "../jqvmap/jqvmap.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", :type => "text/ javascript"}
+    %script{:src => "../jqvmap/jquery.vmap.js", :type => "text/javascript"}
+    %script{:src => "../jqvmap/maps/jquery.vmap.world.js", :type => "text/javascript"}
+    :javascript
+      jQuery(document).ready(function() {
+        jQuery('#vmap').vectorMap({ map: 'world_en' });
+      });
+        %body
+    #vmap{:style => "width: 600px; height: 400px;"}

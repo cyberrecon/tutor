@@ -45,3 +45,4 @@ gem 'capistrano', group: :development
 gem 'debugger', group: [:development, :test]
 
 gem 'zurb-foundation'
+gem 'haml'
