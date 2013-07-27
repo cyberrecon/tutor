@@ -5,7 +5,6 @@ server "209.208.79.29", :web, :app, :db, primary: true
 set :application, "blog"
 set :user, "deploy"
 set :deploy_to, "/home/#{user}/apps/#{application}"
-set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
