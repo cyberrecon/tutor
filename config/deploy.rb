@@ -6,6 +6,7 @@ set :application, "blog"
 set :user, "deploy"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :use_sudo, false
+set :deploy_via, :remote_cache
 
 set :scm, "git"
 set :repository, "git@github.com:cyberrecon/#{application}.git"
