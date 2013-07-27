@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require jvectormap/jquery-jvectormap-1.2.2.min 
+//= require jvectormap/maps/jquery-jvectormap-us-aea-en
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

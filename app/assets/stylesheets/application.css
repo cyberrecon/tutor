@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require foundation_and_overrides
+ *= require jquery-jvectormap-1.2.2
  *= require_tree .
  */
