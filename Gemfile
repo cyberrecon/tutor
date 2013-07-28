@@ -44,6 +44,8 @@ gem 'capistrano', group: :development
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
+# add your gems here
 gem 'zurb-foundation'
 gem 'haml'
 gem 'devise', '~> 3.0.0.rc'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
