@@ -46,3 +46,4 @@ gem 'debugger', group: [:development, :test]
 
 gem 'zurb-foundation'
 gem 'haml'
+gem 'devise', '~> 3.0.0.rc'
