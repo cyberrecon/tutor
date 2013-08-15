@@ -20,5 +20,5 @@ production:
   database: blog_production
   host: localhost
   username: blog
-  password: 139Oblogextr@
+  password: 
   pool: 5
