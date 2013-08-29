@@ -1,8 +1,8 @@
 require "bundler/capistrano"
 
-server "37.139.18.38", :web, :app, :db, primary: true
+server "192.241.236.52", :web, :app, :db, primary: true
 
-set :application, "blog"
+set :application, "artwork"
 set :user, "deploy"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :use_sudo, false
