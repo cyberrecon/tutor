@@ -24,7 +24,7 @@
         %ul.title-area
           %li.name
             %h1
-              = link_to "Estate Sales", products_path
+              = link_to "World Artwork", products_path
         %section.top-bar-section
           %ul.right
             %li.divider
@@ -37,21 +37,26 @@
             %li= link_to "Contact Us"
             %li.divider
             %li= link_to "Cart"
-    .row
-      .small-8.columns
-        %h1
-          Find Estate Sales
-      .small-5.columns
-        %h2.subheader About Us
 
     .row
-      .small-8.columns
-        #us-map{:style => "width: 475px; height: 293px"}
+      .small-13.columns
+        #world-map{:style => "width: 100%; height: 500px"}
           :javascript
             $(function(){
-              $('#us-map').vectorMap({map: 'us_aea_en'});
+              $('#world-map').vectorMap({map: 'world_mill_en'});
             });
-      .small-5.columns
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     .row
-      .small-8.columns= yield
+      .small-4.columns
+        %h2.subheader Art
+      .small-4.columns
+        %h2.subheader Music
+      .small-4.columns
+        %h2.subheader Videos
+
+    .row
+      .small-4.columns
+        = yield
+    .row
+      .small-4.columns= yield
+    .row
+      .small-4.columns= yield
