@@ -17,8 +17,8 @@
 production:
   adapter: postgresql
   encoding: unicode
-  database: blog_production
+  database: tutor_production
   host: localhost
-  username: blog
+  username: tutor
   password: 
   pool: 5
