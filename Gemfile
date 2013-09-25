@@ -50,3 +50,5 @@ gem 'zurb-foundation'
 gem 'haml'
 gem 'devise', '~> 3.0.0.rc'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem "mime-types", "~> 1.25"
+
